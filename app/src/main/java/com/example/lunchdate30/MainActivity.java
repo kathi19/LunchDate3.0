@@ -1,5 +1,6 @@
 package com.example.lunchdate30;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -48,5 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
         thread.start();
         return false;
+    }
+
+    public void onClickNext(View view) {
+        Intent i = new Intent(MainActivity.this, MainActivity2.class);
+
+        startActivity(i);
+
     }
 }
