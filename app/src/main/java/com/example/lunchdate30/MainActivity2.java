@@ -71,4 +71,10 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
 
     }
 
+    public void onClickMenu() {
+
+        Intent i = new Intent(MainActivity2.this, MenuPlan.class);
+
+        startActivity(i);
+    }
 }
