@@ -57,4 +57,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }
+    public void onClickRegister(View view) {
+        Intent i = new Intent(MainActivity.this, Register.class);
+
+        startActivity(i);
+    }
+
 }

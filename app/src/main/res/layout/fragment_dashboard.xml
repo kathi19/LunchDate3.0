@@ -41,6 +41,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="@color/colorPrimary"
+        android:onClick="onClickMenu"
         android:text="Menü-Plan"
         android:textColor="@color/cardview_light_background"
         android:textSize="20dp" />

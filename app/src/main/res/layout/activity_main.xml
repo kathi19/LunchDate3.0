@@ -61,6 +61,7 @@
         android:layout_marginStart="220dp"
         android:layout_marginLeft="220dp"
         android:layout_marginTop="450dp"
+         android:onClick="onClickRegister"
         android:text="Register"
         tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="468dp" />

@@ -14,10 +14,6 @@
         android:text="Profil"
         android:textSize="35dp" />
 
-
-
-
-
     <EditText
         android:id="@+id/name"
         android:layout_width="wrap_content"
@@ -40,7 +36,7 @@
         android:layout_marginEnd="24dp"
         android:ems="25"
         android:inputType="textPersonName"
-        android:text="Alter"
+        android:text="Geburtsdatum"
         android:layout_marginLeft="160dp"
         android:layout_marginRight="24dp" />
 
