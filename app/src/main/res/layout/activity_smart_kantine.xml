@@ -118,5 +118,22 @@
         android:layout_marginTop="300dp"
         android:background="@drawable/dhbw" />
 
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="20dp"
+        android:text="_____"
+        android:textSize="22dp" />
+    <TextView
+        android:id="@+id/deg"
+        android:layout_width="66dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp"
+        android:text="°C"
+        android:textSize="22dp" />
+
 
 </RelativeLayout>
