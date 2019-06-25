@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.net.URL;
+
 public class MainActivity2 extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
 
@@ -108,17 +110,23 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
 
         startActivity(j);
     }
-    public void goToKantine(View view) {
+    public void goToKantine(View view) throws Exception{
 
-        Intent m = new Intent(MainActivity2.this, SmartKantine.class);
+        URL url = new URL(Info.URL + "/get_kantine");
+        new GetKantinenInfo(getApplicationContext()).execute(url);
 
-        startActivity(m);
+        /*Intent m = new Intent(MainActivity2.this, SmartKantine.class);
+
+        startActivity(m);*/
     }
 
-    public void goToDate(View view) {
+    public void goToDate(View view) throws Exception {
 
-        Intent b = new Intent(MainActivity2.this, LetsDate.class);
+        URL url = new URL(Info.URL + "/match" + "?match=" + "katharina@minninger.de");
+        new GetMatch(getApplicationContext()).execute(url);
 
-        startActivity(b);
+       /* Intent b = new Intent(MainActivity2.this, LetsDate.class);
+
+        startActivity(b); */
     }
 }
