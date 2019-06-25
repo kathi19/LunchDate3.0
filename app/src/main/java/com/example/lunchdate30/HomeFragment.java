@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,13 +30,13 @@ public class HomeFragment extends Fragment
         getArg = ((MyApplication) getActivity().getApplication()).getUserData();
 
 
-        TextView text = (TextView) view.findViewById(R.id.name);
+        EditText text = (EditText) view.findViewById(R.id.name2);
         text.setText(getArg[1]);
-        TextView text2 = (TextView) view.findViewById(R.id.alter);
+        EditText  text2 = (EditText ) view.findViewById(R.id.alter2);
         text2.setText(getArg[2]);
-        TextView text3 = (TextView) view.findViewById(R.id.studiengang);
+        EditText text3 = (EditText) view.findViewById(R.id.studiengang2);
         text3.setText(getArg[3]);
-        TextView text4 = (TextView) view.findViewById(R.id.beginn);
+        EditText text4 = (EditText) view.findViewById(R.id.beginn2);
         text4.setText(getArg[4]);
 
         System.out.println("sports: " + getArg[5]);
