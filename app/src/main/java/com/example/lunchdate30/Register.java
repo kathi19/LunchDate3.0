@@ -1,5 +1,6 @@
 package com.example.lunchdate30;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -92,5 +93,9 @@ public class Register extends AppCompatActivity {
             }
         });
         thread.start();
+
+        Intent i = new Intent(Register.this, MainActivity.class);
+
+        startActivity(i);
     }
 }
