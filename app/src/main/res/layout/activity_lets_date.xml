@@ -2,16 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LetsDate">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="105dp"
+        android:layout_width="204dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="120dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="10dp"
-        android:text="Profil"
+        android:text="Dein Match!"
         android:textColor="#DF0101"
         android:textSize="35dp" />
 
@@ -180,16 +182,16 @@
         android:textSize="20dp" />
 
     <CheckBox
-    android:id="@+id/spielen"
-    android:layout_width="117dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="120dp"
-    android:layout_marginLeft="120dp"
-    android:layout_marginTop="395dp"
-    android:layout_marginEnd="24dp"
-    android:layout_marginRight="24dp"
-    android:text="Zocken"
-    android:textSize="20dp" />
+        android:id="@+id/spielen"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="395dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Zocken"
+        android:textSize="20dp" />
 
     <CheckBox
         android:id="@+id/Feiern"
@@ -203,31 +205,18 @@
         android:text="Feiern"
         android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/aktualisieren"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:background="#DF0101"
-        android:textColor="#FFFFFF"
-        android:text="Aktualisieren"
-        android:textSize="18dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="110dp"
-        android:layout_height="161dp"
+        android:id="@+id/imageView4"
+        android:layout_width="103dp"
+        android:layout_height="150dp"
         android:layout_marginStart="0dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="120dp"
 
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profil5" />
 
 
 </RelativeLayout>

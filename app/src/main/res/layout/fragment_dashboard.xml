@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+  >
 
     <Button
         android:id="@+id/letsDate"
@@ -12,9 +13,9 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/colorPrimary"
         android:text="Let´s Date!"
-        android:textColor="@color/cardview_light_background"
+        android:background="#DF0101"
+        android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
@@ -26,9 +27,10 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/colorPrimary"
+        android:background="#DF0101"
+        android:textColor="#FFFFFF"
+        android:onClick="goToKantine"
         android:text="Smart-  Kantine"
-        android:textColor="@color/cardview_light_background"
         android:textSize="20dp" />
 
     <Button
@@ -40,10 +42,10 @@
         android:layout_marginTop="330dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/colorPrimary"
-        android:onClick="onClickMenu"
+        android:background="#DF0101"
+        android:onClick="goToMenu"
         android:text="Menü-Plan"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
@@ -55,18 +57,18 @@
         android:layout_marginTop="330dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/colorPrimary"
+        android:background="#DF0101"
+        android:textColor="#FFFFFF"
         android:onClick="jumpToInfos"
         android:text="Allgemeine Infos"
-        android:textColor="@color/cardview_light_background"
         android:textSize="20dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="381dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="310dp"
-        app:srcCompat="@drawable/dhbw1" />
+        android:layout_width="361dp"
+        android:layout_height="505dp"
+
+
+       android:background="@drawable/dhbw1" />
 
 </RelativeLayout>

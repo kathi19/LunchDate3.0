@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    >
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="242dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
         android:layout_marginTop="300dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="343dp"
+        />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
         android:layout_marginTop="360dp"
         android:ems="10"
         android:inputType="textPassword"
@@ -36,11 +39,12 @@
         android:layout_height="28dp"
         android:text="Email"
         android:textSize="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="315dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="351dp" />
+        tools:layout_editor_absoluteY="351dp"
+        android:textColor="#000000"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -48,21 +52,24 @@
         android:layout_height="29dp"
         android:text="Passwort"
         android:textSize="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="375dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="408dp" />
+        tools:layout_editor_absoluteY="408dp"
+        android:textColor="#000000"/>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginLeft="220dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
         android:layout_marginTop="450dp"
          android:onClick="onClickRegister"
         android:text="Register"
+        android:background="#DF0101"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="105dp"
         tools:layout_editor_absoluteY="468dp" />
 
@@ -70,9 +77,11 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="450dp"
+        android:background="#DF0101"
+        android:textColor="#FFFFFF"
         android:onClick="onClick"
         android:text="Login"
         tools:layout_editor_absoluteX="105dp"
@@ -82,8 +91,8 @@
         android:id="@+id/imageView"
         android:layout_width="308dp"
         android:layout_height="256dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/logo" />
 
@@ -91,8 +100,8 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="500dp"
         android:onClick="onClickNext"
         android:text="NEXT" />
