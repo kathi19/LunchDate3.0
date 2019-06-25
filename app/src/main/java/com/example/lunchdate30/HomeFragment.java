@@ -25,17 +25,9 @@ public class HomeFragment extends Fragment
       super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         String[] getArg = null;
-        if (!getArguments().getStringArray("DATA").equals(NONE) ) {
-            getArg = getArguments().getStringArray("DATA");
-        } else {
-            URL url = null;
-            try {
-                url = new URL(Info.URL + "/get_user" + "?email=" + "katharina@minninger.de");
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-            new GetUserTask(getActivity()).execute(url);
-        }
+
+        getArg = ((MyApplication) getActivity().getApplication()).getUserData();
+
 
         TextView text = (TextView) view.findViewById(R.id.name);
         text.setText(getArg[1]);

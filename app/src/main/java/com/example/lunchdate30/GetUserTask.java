@@ -56,7 +56,10 @@ public class GetUserTask extends AsyncTask<URL, Void, String[]> {
         Intent intent = new Intent(ctx.getApplicationContext(), MainActivity2.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("DATA", result);
+        ((MyApplication) ctx.getApplicationContext()).setUserData(result);
         ctx.startActivity(intent);
+
+
 
 
     }

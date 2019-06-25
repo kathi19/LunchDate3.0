@@ -87,14 +87,4 @@
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/logo" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginLeft="54dp"
-        android:layout_marginTop="500dp"
-        android:onClick="onClickNext"
-        android:text="NEXT" />
-
 </RelativeLayout>

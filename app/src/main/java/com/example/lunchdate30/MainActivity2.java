@@ -27,7 +27,9 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
        /* FragmentManager fragmentManager= getSupportFragmentManager();
         FragmentTransaction transaction= fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment_container, new HomeFragment()).commit();*/
-        loadFragment(new HomeFragment(), data);
+
+
+        loadFragment(new HomeFragment(), ((MyApplication) this.getApplication()).getUserData());
             Toast toast = new Toast(this);
             toast.makeText(this,"Welcome " + data[1] + "! Let's Date!", (short)1);
 
@@ -35,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
 
     private boolean loadFragment(Fragment fragment, String [] data)
     {
-        if(fragment!=null && data == null)
+       /* if(fragment!=null && data == null)
         {
 
             getSupportFragmentManager()
@@ -43,8 +45,8 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
                     .replace(R.id.fragment_container,fragment)
                     .commit();
             return true;
-        } else {
-
+        } else {*/
+            System.out.println("HELLOOOOOOOOOOOOOOOOOOOO");
             System.out.println(data[1]);
             Bundle datap = new Bundle();
             datap.putStringArray("DATA", data);
@@ -64,7 +66,7 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
            /* TextView t4 =  fragment.getView().findViewById(R.id.beginn);
             t.setText(data[4]);*/
 
-        }
+        /*}*/
         return false;
     }
 
