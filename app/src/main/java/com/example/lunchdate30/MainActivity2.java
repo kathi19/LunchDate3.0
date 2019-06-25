@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -27,6 +28,9 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
         FragmentTransaction transaction= fragmentManager.beginTransaction();
         transaction.replace(R.id.fragment_container, new HomeFragment()).commit();*/
         loadFragment(new HomeFragment(), data);
+            Toast toast = new Toast(this);
+            toast.makeText(this,"Welcome " + data[1] + "! Let's Date!", (short)1);
+
     }
 
     private boolean loadFragment(Fragment fragment, String [] data)

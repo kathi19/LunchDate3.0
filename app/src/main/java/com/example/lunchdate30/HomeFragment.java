@@ -10,6 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import static android.icu.text.DateFormat.NONE;
 
 public class HomeFragment extends Fragment
 {
@@ -18,7 +24,18 @@ public class HomeFragment extends Fragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
       super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        String[] getArg =  getArguments().getStringArray("DATA");
+        String[] getArg = null;
+        if (!getArguments().getStringArray("DATA").equals(NONE) ) {
+            getArg = getArguments().getStringArray("DATA");
+        } else {
+            URL url = null;
+            try {
+                url = new URL(Info.URL + "/get_user" + "?email=" + "katharina@minninger.de");
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            new GetUserTask(getActivity()).execute(url);
+        }
 
         TextView text = (TextView) view.findViewById(R.id.name);
         text.setText(getArg[1]);
@@ -57,9 +74,7 @@ public class HomeFragment extends Fragment
         }
 
 
-
-
-
+        Toast.makeText( getActivity(), "Welcome" + getArg[1] + "! Let's Date!", Toast.LENGTH_LONG ).show();
 
         return view;
 
