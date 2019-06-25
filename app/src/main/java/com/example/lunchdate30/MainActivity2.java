@@ -102,10 +102,23 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
 
     }
 
-    public void onClickMenu() {
+    public void goToMenu(View view) {
 
-        Intent i = new Intent(MainActivity2.this, MenuPlan.class);
+        Intent j = new Intent(MainActivity2.this, MenuPlan.class);
 
-        startActivity(i);
+        startActivity(j);
+    }
+    public void goToKantine(View view) {
+
+        Intent m = new Intent(MainActivity2.this, SmartKantine.class);
+
+        startActivity(m);
+    }
+
+    public void goToDate(View view) {
+
+        Intent b = new Intent(MainActivity2.this, LetsDate.class);
+
+        startActivity(b);
     }
 }
