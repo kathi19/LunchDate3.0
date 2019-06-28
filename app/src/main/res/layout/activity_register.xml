@@ -35,15 +35,15 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="100dp"
-        android:layout_height="134dp"
+        android:layout_width="103dp"
+        android:layout_height="140dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="220dp"
 
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profil5" />
 
     <EditText
         android:id="@+id/alter2"
@@ -293,7 +293,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="#DF0101"
-        android:onClick="onClickRegister"
+        android:onClick="goToLogin"
         android:text="Register"
         android:textColor="#FFFFFF" />
 

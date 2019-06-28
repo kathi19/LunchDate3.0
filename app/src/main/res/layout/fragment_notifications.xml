@@ -24,6 +24,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:textColor="#000000"
         android:text="[Jessica Meyer, 20, BWL-Industrie]              Hi, lust am Freitag mit mir in die Kantine zu gehen?"
         android:textSize="15dp" />
 
@@ -36,6 +37,7 @@
         android:layout_marginTop="220dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:textColor="#000000"
         android:text="[Lisa Schmitt, 22, Digitale Medien] Glückwunsch du hast ein Match!"
         android:textSize="15dp" />
 
@@ -48,6 +50,7 @@
         android:layout_marginTop="320dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:textColor="#000000"
         android:text="[Prof. Dr. Müller, 65, Logistik]                      Das Kursessen findet am 20.07.                 um 12:00 in der Kantine statt!"
         android:textSize="15dp" />
 

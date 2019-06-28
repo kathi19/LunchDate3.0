@@ -43,7 +43,7 @@ public class Register extends AppCompatActivity {
         for (String string : strings) {
             if (string.equals("")) {
                 Toast toast = new Toast(this);
-                toast.makeText(this,"Fehlender Eintrag", (short)1);
+                toast.makeText(this, "Fehlender Eintrag", (short) 1);
                 return;
             }
         }
@@ -66,7 +66,7 @@ public class Register extends AppCompatActivity {
 
                     String output = "{\n";
                     int i = 0;
-                    for(String string: STRINGS) {
+                    for (String string : STRINGS) {
                         output += "\"" + i++ + "\": \"" + string + "\",\n";
                     }
                     output = output.substring(0, output.length() - 2);
@@ -79,11 +79,10 @@ public class Register extends AppCompatActivity {
                     out.flush();
                     out.close();
                     BufferedReader reader = new BufferedReader(
-                            new InputStreamReader(connection.getInputStream()) );
+                            new InputStreamReader(connection.getInputStream()));
 
-                    for ( String line; (line = reader.readLine()) != null; )
-                    {
-                        System.out.println( line );
+                    for (String line; (line = reader.readLine()) != null; ) {
+                        System.out.println(line);
                     }
 
                     reader.close();
@@ -97,5 +96,21 @@ public class Register extends AppCompatActivity {
         Intent i = new Intent(Register.this, MainActivity.class);
 
         startActivity(i);
+    }
+
+    public void goToLogin(View view) {
+
+        Intent i = new Intent(Register.this, MainActivity.class);
+
+        startActivity(i);
+
+    }
+
+    public void goNext(View view) {
+
+        Intent i = new Intent(Register.this, MainActivity2.class);
+
+        startActivity(i);
+
     }
 }
