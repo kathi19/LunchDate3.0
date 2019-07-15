@@ -6,6 +6,7 @@ import android.os.*;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -32,8 +33,24 @@ public class MainActivity extends AppCompatActivity {
                 // Gets the image task from the incoming Message object.
 
             }
-
         };
+        try {
+            String[] Arg = getIntent().getStringArrayExtra("DATA");
+           // Toast.makeText( this ,"User nicht vorhanden!", Toast.LENGTH_LONG ).show();
+
+            if (!Arg.equals(null)) {
+
+                Toast toast = Toast.makeText(getApplicationContext(),
+                        "User nicht vorhanden!", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.LEFT, 0, 0);
+                toast.show();
+            }
+
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            return;
+
+        }
         }
 
     public boolean onClick(View view) throws Exception {
@@ -41,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
         String mail = ((EditText) findViewById(R.id.editText)).getText().toString();
         System.out.println( "email" + mail);
         if (mail.equals("")) {
-            Toast toast = new Toast(this);
-            toast.makeText(this,"Fehlender Eintrag", (short)1);
+            Toast.makeText( this ,"Eintrag fehlt!!", Toast.LENGTH_LONG ).show();
         }
 
         URL url = new URL(Info.URL + "/get_user" + "?email=" + mail);

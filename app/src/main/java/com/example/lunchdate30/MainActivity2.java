@@ -122,7 +122,9 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
 
     public void goToDate(View view) throws Exception {
 
-        URL url = new URL(Info.URL + "/match" + "?match=" + "katharina@minninger.de");
+        System.out.println("DATE!!!!!!");
+
+        URL url = new URL(Info.URL_MATCHING + "/match" + "?user=" + (((MyApplication) this.getApplication()).getUserData())[0]);
         new GetMatch(getApplicationContext()).execute(url);
 
        /* Intent b = new Intent(MainActivity2.this, LetsDate.class);
