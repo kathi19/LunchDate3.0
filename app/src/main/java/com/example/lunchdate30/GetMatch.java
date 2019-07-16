@@ -21,7 +21,7 @@ public class GetMatch extends AsyncTask<URL, Void, String[]> {
     protected String[] doInBackground(URL... urls) {
         String[] values = null;
         try {
-
+            System.out.println(urls[0]);
             HttpURLConnection connection = (HttpURLConnection) urls[0].openConnection();
             connection.setRequestMethod("GET");
             connection.setDoInput(true);
